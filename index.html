@@ -1,35 +1,67 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 	
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<title>Permuta</title>
+</html>
+<head>
+		<link rel=stylesheet href="estilo.css" />
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<title>index</title>
 		
-		<script src="http://jquery.com/src/jquery-latest.js"></script>
-		<script src="script.js"></script> 
- 
 	</head>
 	<body>
-	<div id="wrapper">
-		<div id="header">
-			<h1>Permuta</h1>
+		<div id="barraLog">
+			<div id="loggin">
+				<label>Usuario:</label>
+				<input id="inputUsuario" />
+				<label>Constraseña:</label>
+				<input id="idContraseña" />
+				<button id="botonSubmit">loggin</button>
+			</div>
+			<div id="registro">	
+				<label id="idRegistro">¿No estas registrado?</label>
+			</div>
 		</div>
 		
-		<div id="main">
-		
-			<div id="zona_centro">
-				<div id="dibujo"></div>
-				<div id="formulario"></div>
-			</div>
-			<div id="zona_bajo">
-				<button id="boton1">Boton1</button>
-
+		<div id="principal">
+			
+			<div class="contenedor" id="header">
+				<h1>Cambia-T</h1>
 			</div>
 			
-		</div>
-	</div>	
+			<div id="body">
+					<!--ZONA DE CAMBIO-->
+					<div class="contenedor" id="centro">
+						
+						<div class="c1" id="uno"></div>
+						<div class="c1" id="dos"></div>
+						<div id="tres"></div>
+						<div class="c2" id="cuatro"></div>
+						<div class="c2" id="cinco"></div>
+						
+					</div>	
+					<!--ZONA BAJA, AREA BOTONES-->
+					<div class="contenedor" id="abajo">
+						
+						<div class="text" id="texto">!Cuelga tu anuncio!</div>
+						
+						<div class="text" id="texto2">!Busca alguna coincidencia!</div>
+						
+						<div id="cuadroBotones">
+							<button class="boton" id="boton1" onclick="funcion()">boton1</button>
+							<button class="boton" id="boton2" onclick="funcion2()">boton2</button>
+						</div>
+						
+						
+						
+					</div>
+					
+					
+					<div class="contenedor" id="piePagina">
+						
+					</div>
+					
+			</div>
 		
+		
+		</div>		
 	</body>
-</html>
